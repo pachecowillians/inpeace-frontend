@@ -1,0 +1,14 @@
+header {
+    background-color: var(--primary);
+    padding: 8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
