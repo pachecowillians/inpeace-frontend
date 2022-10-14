@@ -1,0 +1,13 @@
+:root {
+    --primary: #174DBA;
+    --grey: #EFF0F3;
+    --white: #FFFFFF;
+    --dark: #505050;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
