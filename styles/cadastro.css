@@ -108,6 +108,7 @@ main {
     appearance: none;
     outline: none;
     display: flex;
+    cursor: pointer;
 }
 
 .input-container select:active {
@@ -125,6 +126,7 @@ main {
     position: absolute;
     top: 40%;
     right: 10px;
+    cursor: pointer;
 }
 
 .radio-group {
