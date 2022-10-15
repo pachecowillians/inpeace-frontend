@@ -48,8 +48,8 @@ main span {
     flex: 1;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    align-items: center;
-    justify-items: center;
+    align-items: stretch;
+    justify-items: stretch;
     align-content: space-evenly;
     gap: 20px 40px;
     width: 100%;
@@ -57,16 +57,17 @@ main span {
 }
 
 .user {
-    width: 300px;
-    height: 200px;
     background-color: var(--white);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: center;
     gap: 10px;
+    width: 100%;
+    align-items: center;
+    min-height: 224px;
+    position: relative;
 }
 
 .picture-name {
@@ -76,10 +77,12 @@ main span {
     justify-content: center;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
+    user-select: none;
 }
 
-.user img{
-    height: 100px;
+.user img {
+    height: 70px;
     border-radius: 50%;
 }
 
@@ -88,8 +91,22 @@ main span {
     color: var(--dark);
 }
 
-.picture-name span{
+.picture-name span {
     font-size: 22px;
     font-weight: bold;
     color: var(--primary);
+}
+
+.user button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.user button img{
+    height: 24px;
 }
