@@ -5,6 +5,16 @@
     --dark: #505050;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body,
 html {
     width: 100%;
@@ -12,5 +22,5 @@ html {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family:  sans-serif;
+    font-family: sans-serif;
 }
