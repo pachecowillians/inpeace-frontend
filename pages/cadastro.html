@@ -20,7 +20,9 @@
     <main>
         <div class="cadastro-container">
             <form action="./lista-usuarios.html" method="get">
-                <h3>Cadastro</h3>
+                <div class="form-header">
+                    <h3>Cadastro</h3>
+                </div>
                 <div class="input-group">
                     <div class="input-container">
                         <label for="name">Nome completo</label>
@@ -70,9 +72,11 @@
                         <input type="password" id="confirm-password">
                     </div>
                 </div>
-                <button type="submit">Cadastrar</button>
+                <div class="form-footer">
+                    <button type="submit">Cadastrar</button>
+                    <span class="login">Já possui conta? <a href="./index.html">Entre aqui</a></span>
+                </div>
             </form>
-            <span class="login">Já possui conta? <a href="./index.html">Entre aqui</a></span>
         </div>
     </main>
 </body>
