@@ -31,7 +31,7 @@ main {
 }
 
 .login-container {
-    padding: 20px 56px;
+    padding: 24px 72px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@ main {
     align-content: center;
     justify-content: center;
     align-items: stretch;
-    gap: 32px;
+    gap: 40px;
     width: 100%;
 
 }
@@ -103,6 +103,7 @@ form button {
 
 .create-account {
     margin: 24px 0px;
+    color: var(--dark);
 }
 
 .create-account a {
