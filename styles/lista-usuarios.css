@@ -32,18 +32,18 @@ main {
     padding: 48px 176px;
 }
 
-main h1{
+main h1 {
     color: var(--primary);
     margin: 0px;
     padding: 0px;
 }
 
-main span{
+main span {
     color: var(--dark);
     align-self: flex-end;
 }
 
-.users{
+.users {
     display: grid;
     flex: 1;
     grid-template-columns: repeat(3, 1fr);
@@ -56,9 +56,40 @@ main span{
     padding: 32px 0px;
 }
 
-.user{
-    width: 100%;
+.user {
+    width: 300px;
     height: 200px;
     background-color: var(--white);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.picture-name {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.user img{
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user span {
+    align-self: center;
+    color: var(--dark);
+}
+
+.picture-name span{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary);
 }
