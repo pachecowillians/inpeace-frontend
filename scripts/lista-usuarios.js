@@ -5,7 +5,6 @@ async function fetchUsers() {
 }
 
 function createCard(user) {
-    console.log(user);
     let divUser = document.createElement("div");
     divUser.classList.add('user');
 
@@ -38,12 +37,18 @@ function createCard(user) {
     return divUser;
 }
 
+function updateItemsShown(shown, total) {
+    let itemsShown = document.querySelector("#items-shown");
+    itemsShown.innerHTML = `mostrando ${shown} de ${total}`;
+}
+
 window.onload = () => {
     fetchUsers().then(response => {
         const users = response.data;
         users.map((user) => {
             const usersContainer = document.querySelector(".users");
-            usersContainer.appendChild(createCard(user))
+            usersContainer.appendChild(createCard(user));
+            updateItemsShown(response.per_page, response.total);
         })
     })
 }
