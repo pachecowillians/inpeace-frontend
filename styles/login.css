@@ -99,6 +99,7 @@ form button {
     background-color: var(--primary);
     font-weight: bold;
     color: var(--white);
+    cursor: pointer;
 }
 
 .create-account {
