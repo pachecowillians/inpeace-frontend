@@ -1,13 +1,16 @@
 :root {
     --primary: #174DBA;
-    --grey: #EFF0F3;
+    --gray: #EFF0F3;
     --white: #FFFFFF;
     --dark: #505050;
 }
 
 body,
 html {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     border: 0;
+    font-family:  sans-serif;
 }
