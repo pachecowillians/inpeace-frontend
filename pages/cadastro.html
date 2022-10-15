@@ -17,22 +17,61 @@
         </div>
     </header>
     <main>
-        <div class="login-container">
+        <div class="cadastro-container">
             <form action="lista-usuarios.html" method="post">
                 <h3>Cadastro</h3>
                 <div class="input-group">
-                    <div class="login-input-container">
-                        <label for="login-email">E-mail</label>
-                        <input type="email" id="login-email">
+                    <div class="input-container">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name">
                     </div>
-                    <div class="login-input-container">
-                        <label for="login-email">Senha</label>
-                        <input type="password" id="login-password">
+                    <div class="input-container">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="state">Estado</label>
+                        <div class="select-area">
+                            <select name="state" id="state">
+                                <option value="" selected disabled hidden></option>
+                                <option value="Espírito Santo">Espírito Santo</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Minas Gerais">Mato Grosso</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="sexo">Sexo</label>
+                        <div class="radio-group" id="sexo">
+                            <div class="radio-item">
+                                <label for="feminino">Feminino</label>
+                                <input type="radio" name="sexo-radio" id="feminino">
+                            </div>
+                            <div class="radio-item">
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" name="sexo-radio" id="masculino">
+                            </div>
+                            <div class="radio-item">
+                                <label for="outro">Outro</label>
+                                <input type="radio" name="sexo-radio" id="outro">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password">
+                        <small class="hint">A senha deve ter no mínimo 6 caracteres</small>
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm-password">Confirmar senha</label>
+                        <input type="password" id="confirm-password">
                     </div>
                 </div>
                 <button type="submit">Cadastrar</button>
             </form>
-            <span class="create-account">Já possui conta? <a href="./index.html">Entre aqui</a></span>
+            <span class="login">Já possui conta? <a href="./index.html">Entre aqui</a></span>
         </div>
     </main>
 </body>
