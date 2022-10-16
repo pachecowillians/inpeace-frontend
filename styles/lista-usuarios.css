@@ -36,6 +36,7 @@ main h1 {
     margin: 0px;
     padding: 0px;
     margin-top: 120px;
+    font-size: 48px;
 }
 
 main span {
@@ -66,7 +67,7 @@ main span {
     gap: 10px;
     width: 100%;
     align-items: center;
-    min-height: 224px;
+    padding: 48px 48px;
     position: relative;
 }
 
@@ -82,17 +83,18 @@ main span {
 }
 
 .user img {
-    height: 70px;
+    height: 120px;
     border-radius: 50%;
 }
 
 .user span {
     align-self: center;
     color: var(--dark);
+    font-size: 22px;
 }
 
 .picture-name span {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
     color: var(--primary);
 }
@@ -114,6 +116,7 @@ main span {
 #items-shown {
     display: block;
     text-align: end;
+    font-size: 22px;
 }
 
 

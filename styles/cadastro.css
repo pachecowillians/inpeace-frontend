@@ -54,7 +54,7 @@ main form {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 32px 16px;
+    padding: 32px 56px;
     background-color: var(--white);
     font-size: 16px;
     border-radius: 5px;
@@ -147,7 +147,7 @@ main form {
     justify-content: center;
     align-items: center;
     gap: 4px;
-    line-height: 5px;
+    line-height: 18px;
 }
 
 .radio-item *,
@@ -187,7 +187,12 @@ form button {
 
 @media only screen and (max-width: 425px) {
     main form {
-        padding: 32px 16px;
+        padding: 32px 24px;
+        align-items: stretch;
+    }
+
+    form button {
+        width: 100%;
     }
 }
 
@@ -196,12 +201,21 @@ form button {
         width: fit-content;
         margin: 60px auto;
         margin-top: 120px;
+        align-items: stretch;
+    }
+
+    form button {
+        width: 100%;
     }
 }
 
 @media only screen and (min-width: 820px) {
     .input-group {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    main form {
+        align-items: center;
     }
 }
 
