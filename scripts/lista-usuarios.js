@@ -2,8 +2,9 @@ async function fetchUsers() {
     let loader = document.createElement("div");
     loader.id = "loader";
     document.querySelector(".users").appendChild(loader);
-    const response = await fetch('https://reqres.in/api/users?delay=3');
-    const jsonResponse = await response.json();
+
+    const response = await axios.get('https://reqres.in/api/users?delay=3');
+    const jsonResponse = await response.data;
     return jsonResponse;
 }
 
