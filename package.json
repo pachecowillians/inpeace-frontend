@@ -1,0 +1,31 @@
+{
+  "name": "inpeace-frontend",
+  "version": "1.0.0",
+  "description": "This project is part of a selection process that I am participating in the company inPeace.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pachecowillians/inpeace-frontend.git"
+  },
+  "keywords": [
+    "inpeace",
+    "frontend",
+    "users",
+    "login",
+    "api",
+    "sessionStorage",
+    "responsiveness"
+  ],
+  "author": "Willian Pacheco Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pachecowillians/inpeace-frontend/issues"
+  },
+  "homepage": "https://github.com/pachecowillians/inpeace-frontend#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
