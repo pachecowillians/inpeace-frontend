@@ -1,5 +1,8 @@
 async function fetchUsers() {
-    const response = await fetch('https://reqres.in/api/users?page=2');
+    let loader = document.createElement("div");
+    loader.id = "loader";
+    document.querySelector(".users").appendChild(loader);
+    const response = await fetch('https://reqres.in/api/users?delay=3');
     const jsonResponse = await response.json();
     return jsonResponse;
 }
@@ -44,6 +47,7 @@ function updateItemsShown(shown, total) {
 
 window.onload = () => {
     fetchUsers().then(response => {
+        document.querySelector(".users").innerHTML = ""
         const users = response.data;
         users.map((user) => {
             const usersContainer = document.querySelector(".users");
