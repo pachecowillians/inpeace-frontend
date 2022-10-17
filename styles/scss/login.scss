@@ -1,5 +1,7 @@
+@import "./global.scss";
+
 header {
-    background-color: var(--primary);
+    background-color: $primary;
     padding: 10px;
     position: fixed;
     top: 0px;
@@ -7,181 +9,129 @@ header {
     width: 100%;
     height: 60px;
     z-index: 99;
-}
 
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
+    .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
 
-.image-container img {
-    height: 100%;
+        img {
+            height: 100%;
+        }
+    }
 }
 
 main {
-    background-color: var(--gray);
+    background-color: $gray;
     width: inherit;
     align-content: center;
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
     height: inherit;
-}
 
-.form-header {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    form {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 48px;
+        padding: 32px 88px 72px 88px;
+        background-color: $white;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 0px auto;
+        width: 100%;
+        margin-top: 60px;
 
-.form-header h3 {
-    font-size: 32px;
-    font-weight: bold;
-    padding: 0px;
-    margin: 0px;
-    color: var(--primary);
+        .form-header {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-}
+            h3 {
+                font-size: 32px;
+                font-weight: bold;
+                padding: 0px;
+                margin: 0px;
+                color: $primary;
+                user-select: none;
+            }
+        }
 
-main form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 32px 88px 72px 88px;
-    background-color: var(--white);
-    font-size: 16px;
-    border-radius: 5px;
-    margin: 0px auto;
-    width: 100%;
-    margin-top: 60px;
-}
+        .form-main {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
 
-.input-group {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
-    width: 100%;
-    align-items: start;
-    justify-items: stretch;
-    justify-content: center;
-    align-content: center;
-}
+            .form-area {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                gap: 48px;
 
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 4px;
-    color: var(--primary);
-    width: 100%;
-}
+                .input-group {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 24px;
+                    width: 100%;
+                    align-items: start;
+                    justify-items: stretch;
+                    justify-content: center;
+                    align-content: center;
 
-.input-container small {
-    color: var(--dark);
-}
+                    .input-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 4px;
+                        color: $primary;
+                        width: 100%;
 
-.input-container input,
-.input-container select {
-    border: 1px solid var(--primary);
-    width: 100%;
-    padding: 10px 16px;
-    border-radius: 10px;
-    outline: none;
-    background-color: var(--white);
-}
+                        input {
+                            border: 1px solid $primary;
+                            width: 100%;
+                            padding: 10px 16px;
+                            border-radius: 8px;
+                            outline: none;
+                            background-color: $white;
+                        }
+                    }
+                }
 
-.select-area {
-    width: 100%;
-    display: flex;
-    position: relative;
-}
+                button {
+                    outline: none;
+                    border: none;
+                    padding: 12px 122px;
+                    text-transform: uppercase;
+                    border-radius: 8px;
+                    background-color: $primary;
+                    font-weight: bold;
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+        }
 
-.input-container select {
-    appearance: none;
-    outline: none;
-    display: flex;
-    cursor: pointer;
-}
+        span {
+            color: $dark;
 
-.input-container select:active {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-
-.select-area:has(select)::after {
-    content: "";
-    width: 0.8em;
-    height: 0.5em;
-    background-color: var(--primary);
-    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-    position: absolute;
-    top: 40%;
-    right: 10px;
-    cursor: pointer;
-}
-
-.radio-group {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0px;
-}
-
-.radio-item {
-    display: flex;
-    flex-direction: row-reverse;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    line-height: 5px;
-}
-
-.radio-item *,
-.radio-item {
-    cursor: pointer;
-}
-
-form button {
-    outline: none;
-    border: none;
-    padding: 12px 96px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    background-color: var(--primary);
-    font-weight: bold;
-    color: var(--white);
-    cursor: pointer;
-}
-
-.form-footer {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-}
-
-.login {
-    color: var(--dark);
-}
-
-.login a {
-    text-decoration: none;
-    color: var(--primary);
+            a {
+                text-decoration: none;
+                color: $primary;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 425px) {
@@ -193,7 +143,7 @@ form button {
 }
 
 @media only screen and (min-width: 425px) and (min-height: 450px),
-screen and (max-width: 425px) and (min-height: 450px) {
+    screen and (max-width: 425px) and (min-height: 450px) {
     main {
         display: flex;
     }
