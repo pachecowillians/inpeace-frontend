@@ -9,6 +9,7 @@ header {
     width: 100%;
     height: 4.5rem;
     z-index: 99;
+    user-select: none;
 
     .image-container {
         display: flex;
@@ -59,6 +60,7 @@ main {
                 padding: 0rem;
                 margin: 0rem;
                 color: $primary;
+                user-select: none;
             }
         }
 
