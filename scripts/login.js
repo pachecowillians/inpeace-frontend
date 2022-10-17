@@ -1,3 +1,4 @@
+
 // Function that executes when the form is submitted
 function handleSubmit(event) {
     // Prevent form to redirect the page
@@ -29,7 +30,6 @@ function handleSubmit(event) {
             }
         }
     } catch (error) {
-        alert("Erro ao submeter o formulário");
-        console.log(error);
+        alert("Não há nenhum usuário cadastrado. Favor realizar o cadastro.");
     }
 }
