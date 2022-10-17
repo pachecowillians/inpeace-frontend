@@ -1,6 +1,6 @@
 async function fetchUsers() {
     let loader = document.createElement("div");
-    loader.id = "loader";
+    loader.id = "load-icon";
     document.querySelector(".users").appendChild(loader);
 
     const response = await axios.get('https://reqres.in/api/users?delay=3');

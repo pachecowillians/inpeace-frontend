@@ -1,50 +1,69 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+}
+
 header {
-  background-color: var(--primary);
+  background-color: #174dba;
   padding: 10px;
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 60px;
+  height: 70px;
   z-index: 99;
 }
-
-.image-container {
+header .image-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-
-.image-container img {
+header .image-container img {
   height: 100%;
 }
 
 main {
-  background-color: var(--gray);
+  background-color: #eff0f3;
   width: inherit;
   align-content: center;
   justify-content: center;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: inherit;
   padding: 0px 24px 40px 24px;
 }
-
 main h1 {
-  color: var(--primary);
+  color: #174dba;
   margin: 0px;
   padding: 0px;
   margin-top: 120px;
   font-size: 48px;
 }
-
 main span {
-  color: var(--dark);
+  color: #505050;
   align-self: flex-end;
 }
-
-.users {
+main .users {
   display: grid;
   flex: 1;
   grid-template-columns: repeat(1, 1fr);
@@ -56,9 +75,8 @@ main span {
   width: 100%;
   padding: 32px 0px;
 }
-
-.user {
-  background-color: var(--white);
+main .users .user {
+  background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -70,8 +88,19 @@ main span {
   padding: 48px 48px;
   position: relative;
 }
-
-.picture-name {
+main .users .user button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+main .users .user button img {
+  height: 24px;
+}
+main .users .user .picture-name {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -81,45 +110,21 @@ main span {
   cursor: pointer;
   user-select: none;
 }
-
-.user img {
+main .users .user .picture-name img {
   height: 120px;
   border-radius: 50%;
 }
-
-.user span {
-  align-self: center;
-  color: var(--dark);
-  font-size: 22px;
-}
-
-.picture-name span {
+main .users .user .picture-name span {
   font-size: 32px;
   font-weight: bold;
-  color: var(--primary);
+  color: #174dba;
 }
-
-.user button {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.user button img {
-  height: 24px;
-}
-
-#items-shown {
-  display: block;
-  text-align: end;
+main .users .user span {
+  align-self: center;
+  color: #505050;
   font-size: 22px;
 }
-
-#loader {
+main .users #load-icon {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -127,14 +132,19 @@ main span {
   width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
-  border: 16px solid var(--white);
+  border: 16px solid #ffffff;
   border-radius: 50%;
-  border-top: 16px solid var(--primary);
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  border-top: 16px solid #174dba;
+  -webkit-animation: load-icon-spin 2s linear infinite;
+  animation: load-icon-spin 2s linear infinite;
+}
+main #items-shown {
+  display: block;
+  text-align: end;
+  font-size: 22px;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes load-icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
   }
@@ -142,7 +152,7 @@ main span {
     -webkit-transform: rotate(360deg);
   }
 }
-@keyframes spin {
+@keyframes load-icon-spin {
   0% {
     transform: rotate(0deg);
   }
@@ -151,17 +161,17 @@ main span {
   }
 }
 @media only screen and (min-width: 600px) {
-  .users {
+  main .users {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 570px) {
   main {
     padding: 0px 10% 40px 10%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .users {
+  main .users {
     grid-template-columns: repeat(3, 1fr);
   }
 }
