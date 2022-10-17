@@ -40,7 +40,7 @@ function handleSubmit(event) {
             document.querySelector("#confirm-password").value = '';
         }
     } catch (error) {
-        alert("Erro ao submeter o formulário!");
+        alert("Erro ao submeter o formulário");
         console.log(error);
     }
 }
