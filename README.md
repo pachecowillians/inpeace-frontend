@@ -28,3 +28,14 @@ Para a construção da interface foi utilizada a fonte Helvetica Neue nos tamanh
 - [x] O e-mail e a senha cadastrados foram armazenados na SessionStorage e utilizou-se essas informações para realizar o login, com as devidas validações.
 - [x] Foi utilizado o NPM para a instalação de bibliotecas.
 
+## Plus
+
+- [x] Foi utilizado o Axios para as requests.
+- [x] Foi criada uma animação de Loading enquanto se aguarda a resposta da API.
+- [x] Foi utilizado o pré-processador de CSS (SASS/SCSS)
+- [x] Adicionou-se o favicon no projeto e atualizou-se o nome da aba de acordo com cada página.
+- [x] Criação do efeito de hover dos botões (escurecem a cor ao passar o mouse por cima deles).
+- [x] Na tela de cadastro, utilizou-se o clip-path no SCSS para gerar o ícone utilizado no select
+- [x] Foi feita a validação de campos em branco, permitindo que os formulários de login e cadastro sejam submetidos apenas quando todos os campos forem preenchidos.
+- [x] Foi feita a validação das senhas (com minlength) para que elas tenham pelo menos 6 caracteres (como mostrado na interface do cadastro) e para que a senha digitada seja igual à confirmação da senha.
+- [x] Impediu-se o acesso à página de listagem de usuários (via URL, por exemplo) sem que o usuário passe pelo processo de cadastro e login.
