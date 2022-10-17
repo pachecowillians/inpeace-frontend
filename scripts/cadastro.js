@@ -5,7 +5,14 @@ function handleSubmit(event) {
     var formData = new FormData(form);
     let formDataObject = Object.fromEntries(formData);
 
-    if (formDataObject["password"] === formDataObject["confirm-password"]) {
+    if (formDataObject["sex"] === undefined ||
+        formDataObject["state"] === undefined ||
+        formDataObject["name"].trim().length == 0 ||
+        formDataObject["email"].trim().length == 0 ||
+        formDataObject["password"].trim().length == 0 ||
+        formDataObject["confirm-password"].trim().length == 0) {
+        alert("Preencha todos os campos!");
+    } else if (formDataObject["password"] === formDataObject["confirm-password"]) {
 
         let loginObject = {
             "email": formDataObject.email,

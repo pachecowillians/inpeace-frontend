@@ -5,8 +5,6 @@ function handleSubmit(event) {
     var formData = new FormData(form);
     let formDataObject = Object.fromEntries(formData);
 
-    console.log(formDataObject);
-
     let validLogin = JSON.parse(sessionStorage.getItem("login"));
 
     if (formDataObject.email === validLogin.email && formDataObject.password === validLogin.password) {
