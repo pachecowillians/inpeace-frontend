@@ -19,6 +19,8 @@ function handleSubmit(event) {
 
             // If the email and password matches the data stored on sessionStorage
             if (formDataObject.email === validLogin.email && formDataObject.password === validLogin.password) {
+                sessionStorage.setItem("user", validLogin.email);
+
                 window.location.assign("./lista-usuarios.html");
             } else {
                 // Wrong email or password

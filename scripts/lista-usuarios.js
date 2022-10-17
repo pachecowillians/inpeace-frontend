@@ -40,7 +40,7 @@ function createCard(user) {
         type: "button"
     });
     let editIcon = createElementWithProps("img", {
-        src: "../assets/icon-edit.svg",
+        src: "../assets/images/icon-edit.svg",
         alt: "Edit user"
     });
 
@@ -98,3 +98,14 @@ window.onload = () => {
         console.log(error);
     }
 }
+
+document.onreadystatechange = function (e) {
+    if (document.readyState === 'complete') {
+        let user = sessionStorage.getItem("user");
+
+        if (user === null) {
+            alert("Usuário não identificado! Favor realizar o login.");
+            window.location.assign("./index.html");
+        }
+    }
+};
