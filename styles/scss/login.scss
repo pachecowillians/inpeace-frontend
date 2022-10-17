@@ -4,10 +4,10 @@ header {
     background-color: $primary;
     padding: 10px;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     width: 100%;
-    height: 72px;
+    height: 4.5rem;
     z-index: 99;
 
     .image-container {
@@ -37,14 +37,14 @@ main {
         align-content: center;
         justify-content: center;
         align-items: center;
-        gap: 48px;
-        padding: 32px 88px 72px 88px;
+        gap: 3rem;
+        padding: 2rem 5.5rem 4.5rem 5.5rem;
         background-color: $white;
-        font-size: 16px;
-        border-radius: 8px;
-        margin: 0px auto;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+        margin: 0rem auto;
         width: 100%;
-        margin-top: 72px;
+        margin-top: 4.5rem;
 
         .form-header {
             display: flex;
@@ -54,10 +54,10 @@ main {
             align-items: center;
 
             h3 {
-                font-size: 32px;
+                font-size: 2rem;
                 font-weight: bold;
-                padding: 0px;
-                margin: 0px;
+                padding: 0rem;
+                margin: 0rem;
                 color: $primary;
                 user-select: none;
             }
@@ -69,7 +69,7 @@ main {
             align-content: center;
             justify-content: center;
             align-items: center;
-            gap: 24px;
+            gap: 1.5rem;
 
             .form-area {
                 display: flex;
@@ -77,12 +77,12 @@ main {
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-                gap: 48px;
+                gap: 3rem;
 
                 .input-group {
                     display: grid;
                     grid-template-columns: repeat(1, 1fr);
-                    gap: 24px;
+                    gap: 1.5rem;
                     width: 100%;
                     align-items: start;
                     justify-items: stretch;
@@ -94,15 +94,15 @@ main {
                         flex-direction: column;
                         align-items: flex-start;
                         justify-content: center;
-                        gap: 4px;
+                        gap: 0.25rem;
                         color: $primary;
                         width: 100%;
 
                         input {
                             border: 1px solid $primary;
                             width: 100%;
-                            padding: 10px 16px;
-                            border-radius: 8px;
+                            padding: 0.875rem 1rem;
+                            border-radius: 0.5rem;
                             outline: none;
                             background-color: $white;
                         }
@@ -112,9 +112,9 @@ main {
                 button {
                     outline: none;
                     border: none;
-                    padding: 12px 122px;
+                    padding: 0.875rem 7.625rem;
                     text-transform: uppercase;
-                    border-radius: 8px;
+                    border-radius: 0.5rem;
                     background-color: $primary;
                     font-weight: bold;
                     color: $white;
@@ -137,8 +137,8 @@ main {
 @media only screen and (min-width: 600px) {
     main form {
         width: fit-content;
-        margin: 72px auto;
-        margin-top: 120px;
+        margin: 4.5rem auto;
+        margin-top: 7.5rem;
     }
 }
 

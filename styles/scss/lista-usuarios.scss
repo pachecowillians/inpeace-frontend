@@ -4,10 +4,10 @@ header {
     background-color: $primary;
     padding: 10px;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0rem;
+    left: 0rem;
     width: 100%;
-    height: 72px;
+    height: 4.5rem;
     z-index: 99;
 
     .image-container {
@@ -30,7 +30,7 @@ main {
     align-items: center;
     overflow-y: auto;
     height: inherit;
-    padding: 0px 24px 40px 24px;
+    padding: 0rem 1.5rem 2.5rem 1.5rem;
 
     .container {
         display: flex;
@@ -38,16 +38,16 @@ main {
         align-content: center;
         justify-content: center;
         align-items: flex-start;
-        gap: 56px;
+        gap: 3.5rem;
         width: 100%;
         flex: 1;
 
         h1 {
             color: $primary;
-            margin: 0px;
-            padding: 0px;
-            margin-top: 120px;
-            font-size: 48px;
+            margin: 0rem;
+            padding: 0rem;
+            margin-top: 7.5rem;
+            font-size: 3rem;
         }
 
         span {
@@ -61,22 +61,22 @@ main {
             justify-content: center;
             align-items: stretch;
             align-content: stretch;
-            gap: 40px 40px;
+            gap: 4rem;
             width: 100%;
             flex: 1;
             max-height: 65%;
 
             .user {
                 background-color: #ffffff;
-                border-radius: 10px;
+                border-radius: 0.75rem;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
-                gap: 10px;
+                gap: 1rem;
                 width: 100%;
                 align-items: center;
-                padding: 48px 48px;
+                padding: 3rem 3rem;
                 position: relative;
 
                 button {
@@ -84,12 +84,12 @@ main {
                     background-color: transparent;
                     outline: none;
                     position: absolute;
-                    top: 16px;
-                    right: 16px;
+                    top: 1rem;
+                    right: 1rem;
                     cursor: pointer;
 
                     img {
-                        height: 32px;
+                        height: 2rem;
                     }
                 }
 
@@ -99,17 +99,17 @@ main {
                     align-content: center;
                     justify-content: center;
                     align-items: center;
-                    gap: 12px;
+                    gap: 0.75rem;
                     cursor: pointer;
                     user-select: none;
 
                     img {
-                        height: 120px;
+                        height: 7.5rem;
                         border-radius: 50%;
                     }
 
                     span {
-                        font-size: 32px;
+                        font-size: 2rem;
                         font-weight: bold;
                         color: $primary;
                     }
@@ -118,7 +118,7 @@ main {
                 span {
                     align-self: center;
                     color: $dark;
-                    font-size: 22px;
+                    font-size: 1.375rem;
                 }
             }
 
@@ -127,12 +127,12 @@ main {
                 left: 50%;
                 top: 50%;
                 z-index: 1;
-                width: 120px;
-                height: 120px;
-                margin: -76px 0 0 -76px;
-                border: 16px solid $white;
+                width: 7.5rem;
+                height: 7.5rem;
+                margin: -4.75rem 0 0 -4.75rem;
+                border: 1rem solid $white;
                 border-radius: 50%;
-                border-top: 16px solid $primary;
+                border-top: 1rem solid $primary;
                 -webkit-animation: load-icon-spin 2s linear infinite;
                 animation: load-icon-spin 2s linear infinite;
             }
@@ -141,7 +141,7 @@ main {
         #items-shown {
             display: block;
             text-align: end;
-            font-size: 22px;
+            font-size: 1.375rem;
         }
     }
 }
@@ -174,7 +174,7 @@ main {
 
 @media only screen and (min-width: 520px) {
     main {
-        padding: 0px 10% 40px 10%;
+        padding: 0rem 10% 2.5rem 10%;
     }
 }
 

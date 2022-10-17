@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *,
@@ -19,17 +20,17 @@ html {
 
 * {
   font-family: "Helvetica Neue";
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 header {
   background-color: #174dba;
   padding: 10px;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0rem;
+  left: 0rem;
   width: 100%;
-  height: 72px;
+  height: 4.5rem;
   z-index: 99;
 }
 header .image-container {
@@ -57,14 +58,14 @@ main form {
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 48px;
-  padding: 32px 88px 72px 88px;
+  gap: 3rem;
+  padding: 2rem 5.5rem 4.5rem 5.5rem;
   background-color: #ffffff;
-  font-size: 16px;
-  border-radius: 8px;
-  margin: 0px auto;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin: 0rem auto;
   width: 100%;
-  margin-top: 72px;
+  margin-top: 4.5rem;
 }
 main form .form-header {
   display: flex;
@@ -74,10 +75,10 @@ main form .form-header {
   align-items: center;
 }
 main form .form-header h3 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 0px;
-  margin: 0px;
+  padding: 0rem;
+  margin: 0rem;
   color: #174dba;
   user-select: none;
 }
@@ -87,7 +88,7 @@ main form .form-main {
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 main form .form-main .form-area {
   display: flex;
@@ -95,12 +96,12 @@ main form .form-main .form-area {
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 3rem;
 }
 main form .form-main .form-area .input-group {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
+  gap: 1.5rem;
   width: 100%;
   align-items: start;
   justify-items: stretch;
@@ -112,24 +113,24 @@ main form .form-main .form-area .input-group .input-container {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 4px;
+  gap: 0.25rem;
   color: #174dba;
   width: 100%;
 }
 main form .form-main .form-area .input-group .input-container input {
   border: 1px solid #174dba;
   width: 100%;
-  padding: 10px 16px;
-  border-radius: 8px;
+  padding: 0.875rem 1rem;
+  border-radius: 0.5rem;
   outline: none;
   background-color: #ffffff;
 }
 main form .form-main .form-area button {
   outline: none;
   border: none;
-  padding: 12px 122px;
+  padding: 0.875rem 7.625rem;
   text-transform: uppercase;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #174dba;
   font-weight: bold;
   color: #ffffff;
@@ -146,8 +147,8 @@ main form span a {
 @media only screen and (min-width: 600px) {
   main form {
     width: fit-content;
-    margin: 72px auto;
-    margin-top: 120px;
+    margin: 4.5rem auto;
+    margin-top: 7.5rem;
   }
 }
 @media only screen and (min-width: 425px) and (min-height: 650px), screen and (max-width: 600px) and (min-height: 500px) {
