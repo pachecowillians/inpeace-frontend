@@ -102,12 +102,12 @@ main .container .users .user button {
   background-color: transparent;
   outline: none;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 16px;
+  right: 16px;
   cursor: pointer;
 }
 main .container .users .user button img {
-  height: 24px;
+  height: 32px;
 }
 main .container .users .user .picture-name {
   display: flex;
