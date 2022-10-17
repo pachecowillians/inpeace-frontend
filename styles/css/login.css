@@ -136,6 +136,10 @@ main form .form-main .form-area button {
   font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: background-color ease 0.3s;
+}
+main form .form-main .form-area button:hover {
+  background-color: #1545A7;
 }
 main form span {
   color: #505050;
@@ -143,6 +147,10 @@ main form span {
 main form span a {
   text-decoration: none;
   color: #174dba;
+  transition: color ease 0.3s;
+}
+main form span a:hover {
+  color: #1545A7;
 }
 
 @media only screen and (min-width: 600px) {

@@ -189,6 +189,10 @@ main form .form-footer button {
   font-weight: bold;
   color: #ffffff;
   cursor: pointer;
+  transition: background-color ease 0.3s;
+}
+main form .form-footer button:hover {
+  background-color: #1545a7;
 }
 main form .form-footer span {
   color: #505050;
@@ -196,6 +200,10 @@ main form .form-footer span {
 main form .form-footer span a {
   text-decoration: none;
   color: #174dba;
+  transition: color ease 0.3s;
+}
+main form .form-footer span a:hover {
+  color: #1545a7;
 }
 
 @media only screen and (max-width: 425px) {

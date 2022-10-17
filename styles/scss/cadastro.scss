@@ -183,6 +183,11 @@ main {
                 font-weight: bold;
                 color: $white;
                 cursor: pointer;
+                transition: background-color ease 0.3s;
+
+                &:hover {
+                    background-color: #1545a7;
+                }
             }
 
             span {
@@ -191,6 +196,11 @@ main {
                 a {
                     text-decoration: none;
                     color: $primary;
+                    transition: color ease 0.3s;
+
+                    &:hover {
+                        color: #1545a7;
+                    }
                 }
             }
         }
