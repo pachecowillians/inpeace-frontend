@@ -51,23 +51,6 @@ main {
   overflow-y: scroll;
   height: inherit;
 }
-
-.form-header {
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-header h3 {
-  font-size: 32px;
-  font-weight: bold;
-  padding: 0px;
-  margin: 0px;
-  color: #174dba;
-}
-
 main form {
   display: flex;
   flex-direction: column;
@@ -78,24 +61,36 @@ main form {
   padding: 32px 56px;
   background-color: #ffffff;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 0px auto;
   width: 100%;
   margin-top: 60px;
 }
-
-.input-group {
+main form .form-header {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main form .form-header h3 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  color: #174dba;
+}
+main form .input-group {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 16px;
+  gap: 24px;
   width: 100%;
   align-items: start;
   justify-items: stretch;
   justify-content: center;
   align-content: center;
 }
-
-.input-container {
+main form .input-group .input-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -104,52 +99,48 @@ main form {
   color: #174dba;
   width: 100%;
 }
-
-.input-container small {
+main form .input-group .input-container span {
   color: #505050;
 }
-
-.input-container input,
-.input-container select {
+main form .input-group .input-container input,
+main form .input-group .input-container select {
   border: 1px solid #174dba;
   width: 100%;
   padding: 10px 16px;
-  border-radius: 10px;
+  border-radius: 8px;
   outline: none;
   background-color: #ffffff;
 }
-
-.select-area {
+main form .input-group .input-container .select-area {
   width: 100%;
   display: flex;
   position: relative;
 }
-
-.input-container select {
+main form .input-group .input-container .select-area select {
   appearance: none;
   outline: none;
   display: flex;
   cursor: pointer;
 }
-
-.input-container select:active {
+main form .input-group .input-container .select-area select option {
+  color: #505050;
+}
+main form .input-group .input-container .select-area select:active {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-
-.select-area:has(select)::after {
+main form .input-group .input-container .select-area:has(select)::after {
   content: "";
   width: 0.8em;
   height: 0.5em;
   background-color: #174dba;
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  clip-path: polygon(0 10%, 50% 100%, 100% 10%, 90% 0, 50% 70%, 10% 0);
   position: absolute;
   top: 40%;
   right: 10px;
   cursor: pointer;
 }
-
-.radio-group {
+main form .input-group .input-container .radio-group {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -158,35 +149,26 @@ main form {
   width: 100%;
   padding: 10px 0px;
 }
-
-.radio-item {
+main form .input-group .input-container .radio-group .radio-item {
   display: flex;
   flex-direction: row-reverse;
   align-content: center;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   line-height: 18px;
-}
-
-.radio-item *,
-.radio-item {
   cursor: pointer;
 }
-
-form button {
-  outline: none;
-  border: none;
-  padding: 12px 96px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  background-color: #174dba;
-  font-weight: bold;
-  color: #ffffff;
+main form .input-group .input-container .radio-group .radio-item input[type=radio] {
+  margin: 0px;
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+main form .input-group .input-container .radio-group .radio-item * {
   cursor: pointer;
 }
-
-.form-footer {
+main form .form-footer {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -194,12 +176,21 @@ form button {
   align-items: center;
   gap: 16px;
 }
-
-.login {
+main form .form-footer button {
+  outline: none;
+  border: none;
+  padding: 12px 96px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #174dba;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+main form .form-footer span {
   color: #505050;
 }
-
-.login a {
+main form .form-footer span a {
   text-decoration: none;
   color: #174dba;
 }
@@ -209,7 +200,7 @@ form button {
     padding: 32px 24px;
     align-items: stretch;
   }
-  form button {
+  main form button {
     width: 100%;
   }
 }
@@ -220,12 +211,12 @@ form button {
     margin-top: 120px;
     align-items: stretch;
   }
-  form button {
+  main form button {
     width: 100%;
   }
 }
 @media only screen and (min-width: 820px) {
-  .input-group {
+  main form .input-group {
     grid-template-columns: repeat(2, 1fr);
   }
   main form {
