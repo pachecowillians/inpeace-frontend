@@ -18,7 +18,9 @@ function handleSubmit(event) {
             formDataObject["confirm-password"].trim().length == 0) {
             alert("Preencha todos os campos!");
         } else if (formDataObject["password"] === formDataObject["confirm-password"]) {
-            // Validating equality between password and confirm password
+            // If password and confirm password are equal
+
+            // Creating object to store on sessionStorage
             let loginObject = {
                 "email": formDataObject.email,
                 "password": formDataObject.password,
@@ -38,7 +40,7 @@ function handleSubmit(event) {
             document.querySelector("#confirm-password").value = '';
         }
     } catch (error) {
-        alert("Erro ao submeter o formulário");
+        alert("Erro ao submeter o formulário!");
         console.log(error);
     }
 }

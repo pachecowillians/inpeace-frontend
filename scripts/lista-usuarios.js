@@ -22,10 +22,11 @@ async function fetchUsers() {
     document.querySelector(".users").appendChild(loader);
 
     // Getting data from API with axios
-    const response = await axios.get('https://reqres.in/api/users?delay=0');
+    const response = await axios.get('https://reqres.in/api/users?delay=2');
     const jsonResponse = await response.data;
-    return jsonResponse;
 
+    // Returning users list and pagination information
+    return jsonResponse;
 }
 
 // Function to create a card with user information
@@ -71,7 +72,7 @@ function createCard(user) {
     return divUser;
 }
 
-// Function to display items shown number on the bottom of the page
+// Function to display pagination number on the bottom of the page
 function updateItemsShown(shown, total) {
     let itemsShown = document.querySelector("#items-shown");
     itemsShown.innerHTML = `mostrando ${shown} de ${total}`;
@@ -85,12 +86,14 @@ window.onload = () => {
             // Removing loading animation
             document.querySelector(".users").innerHTML = ""
             const users = response.data;
-            // Create a card to each user
+
+            // Creating a card to each user
             users.map((user) => {
                 const usersContainer = document.querySelector(".users");
                 usersContainer.appendChild(createCard(user));
             })
-            // Update number of items shown
+
+            // Updating the number of items shown
             updateItemsShown(response.per_page, response.total);
         })
     } catch (error) {
@@ -99,10 +102,14 @@ window.onload = () => {
     }
 }
 
+// Function that executes when the page is loading
 document.onreadystatechange = function (e) {
     if (document.readyState === 'complete') {
+
+        //Verify if there is an user logged in
         let user = sessionStorage.getItem("user");
 
+        // If there is no user, return to the login page
         if (user === null) {
             alert("Usuário não identificado! Favor realizar o login.");
             window.location.assign("./index.html");

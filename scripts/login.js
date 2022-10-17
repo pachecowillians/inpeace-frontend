@@ -1,4 +1,3 @@
-
 // Function that executes when the form is submitted
 function handleSubmit(event) {
     // Prevent form to redirect the page
@@ -10,7 +9,7 @@ function handleSubmit(event) {
         var formData = new FormData(form);
         let formDataObject = Object.fromEntries(formData);
 
-        // Validating if all the fields are filled
+        // If some field is empty
         if (formDataObject["email"].trim().length == 0 || formDataObject["password"].trim().length == 0) {
             alert("Preencha todos os campos!");
         } else {
