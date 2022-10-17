@@ -187,7 +187,7 @@ main .container #items-shown {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media only screen and (max-width: 850px) and (min-height: 2350px), screen and (min-width: 850px) and (min-height: 1300px), screen and (min-width: 1300px) and (min-height: 960px) {
+@media only screen and (max-width: 850px) and (min-height: 2350px), screen and (min-width: 850px) and (min-height: 1300px), screen and (min-width: 1300px) and (min-height: 1100px) {
   main {
     display: flex;
     flex-direction: column;
