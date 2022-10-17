@@ -2,6 +2,22 @@
 
 Este projeto é parte do processo seletivo da InPeace, do qual estou participando. Ele tem por objetivo simular uma aplicação que consiste em gerenciar usuários de um sistema.
 
+Neste projeto, foram usados alguns pacotes tais como axios, sass e http-server. Por isso, logo após clonar o repositório, é necessário instalar esses pacotes no projeto utilizando o seguinte comando:
+
+```sh
+npm install
+```
+
+Após instalar todos os pacotes e dependências do projeto, para executá-lo, basta executar o seguinte comando:
+
+```sh
+npm run http-server
+```
+
+O comando acima irá iniciar um servidor HTTP local em sua máquina na porta 8080 com a aplicação rodando nele.
+
+Com o servidor em execução, basta acessar [http://localhost:8080/](http://localhost:8080/) que a página de Login será apresentada. Através dessa página, é possível acessar as páginas de cadastro e de lista de usuários com os processos de cadastro e de autenticação solicitados.
+
 As imagens abaixo mostram o resultado final das interfaces construídas:
 
 <div align="center">
