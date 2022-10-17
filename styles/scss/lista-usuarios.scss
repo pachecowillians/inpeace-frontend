@@ -32,107 +32,116 @@ main {
     height: inherit;
     padding: 0px 24px 40px 24px;
 
-    h1 {
-        color: $primary;
-        margin: 0px;
-        padding: 0px;
-        margin-top: 120px;
-        font-size: 48px;
-    }
-
-    span {
-        color: $dark;
-        align-self: flex-end;
-    }
-
-    .users {
-        display: grid;
-        flex: 1;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-items: stretch;
-        justify-items: center;
+    .container {
+        display: flex;
+        flex-direction: column;
         align-content: center;
-        gap: 40px 40px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 48px;
         width: 100%;
-        padding: 32px 0px;
+        flex: 1;
 
-        .user {
-            background-color: $white;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
+        h1 {
+            color: $primary;
+            margin: 0px;
+            padding: 0px;
+            margin-top: 120px;
+            font-size: 48px;
+        }
+
+        span {
+            color: $dark;
+            align-self: flex-end;
+        }
+
+        .users {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             justify-content: center;
-            gap: 10px;
+            align-items: stretch;
+            align-content: stretch;
+            gap: 40px 40px;
             width: 100%;
-            align-items: center;
-            padding: 48px 48px;
-            position: relative;
+            flex: 1;
 
-            button {
-                border: none;
-                background-color: transparent;
-                outline: none;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-                cursor: pointer;
-
-                img {
-                    height: 24px;
-                }
-            }
-
-            .picture-name {
+            .user {
+                background-color: #ffffff;
+                border-radius: 10px;
                 display: flex;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
+                gap: 10px;
+                width: 100%;
                 align-items: center;
-                gap: 12px;
-                cursor: pointer;
-                user-select: none;
+                padding: 48px 48px;
+                position: relative;
 
-                img {
-                    height: 120px;
-                    border-radius: 50%;
+                button {
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    cursor: pointer;
+
+                    img {
+                        height: 24px;
+                    }
+                }
+
+                .picture-name {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: center;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 12px;
+                    cursor: pointer;
+                    user-select: none;
+
+                    img {
+                        height: 120px;
+                        border-radius: 50%;
+                    }
+
+                    span {
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: $primary;
+                    }
                 }
 
                 span {
-                    font-size: 32px;
-                    font-weight: bold;
-                    color: $primary;
+                    align-self: center;
+                    color: $dark;
+                    font-size: 22px;
                 }
             }
 
-            span {
-                align-self: center;
-                color: $dark;
-                font-size: 22px;
+            #load-icon {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                z-index: 1;
+                width: 120px;
+                height: 120px;
+                margin: -76px 0 0 -76px;
+                border: 16px solid $white;
+                border-radius: 50%;
+                border-top: 16px solid $primary;
+                -webkit-animation: load-icon-spin 2s linear infinite;
+                animation: load-icon-spin 2s linear infinite;
             }
         }
 
-        #load-icon {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            z-index: 1;
-            width: 120px;
-            height: 120px;
-            margin: -76px 0 0 -76px;
-            border: 16px solid $white;
-            border-radius: 50%;
-            border-top: 16px solid $primary;
-            -webkit-animation: load-icon-spin 2s linear infinite;
-            animation: load-icon-spin 2s linear infinite;
+        #items-shown {
+            display: block;
+            text-align: end;
+            font-size: 22px;
         }
-    }
-
-    #items-shown {
-        display: block;
-        text-align: end;
-        font-size: 22px;
     }
 }
 
@@ -157,7 +166,7 @@ main {
 }
 
 @media only screen and (min-width: 850px) {
-    main .users {
+    main .container .users {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -169,7 +178,7 @@ main {
 }
 
 @media only screen and (min-width: 1300px) {
-    main .users {
+    main .container .users {
         grid-template-columns: repeat(3, 1fr);
     }
 }

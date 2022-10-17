@@ -52,30 +52,38 @@ main {
   height: inherit;
   padding: 0px 24px 40px 24px;
 }
-main h1 {
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  flex: 1;
+}
+main .container h1 {
   color: #174dba;
   margin: 0px;
   padding: 0px;
   margin-top: 120px;
   font-size: 48px;
 }
-main span {
+main .container span {
   color: #505050;
   align-self: flex-end;
 }
-main .users {
+main .container .users {
   display: grid;
-  flex: 1;
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   align-items: stretch;
-  justify-items: center;
-  align-content: center;
+  align-content: stretch;
   gap: 40px 40px;
   width: 100%;
-  padding: 32px 0px;
+  flex: 1;
 }
-main .users .user {
+main .container .users .user {
   background-color: #ffffff;
   border-radius: 10px;
   display: flex;
@@ -88,7 +96,7 @@ main .users .user {
   padding: 48px 48px;
   position: relative;
 }
-main .users .user button {
+main .container .users .user button {
   border: none;
   background-color: transparent;
   outline: none;
@@ -97,10 +105,10 @@ main .users .user button {
   right: 10px;
   cursor: pointer;
 }
-main .users .user button img {
+main .container .users .user button img {
   height: 24px;
 }
-main .users .user .picture-name {
+main .container .users .user .picture-name {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -110,21 +118,21 @@ main .users .user .picture-name {
   cursor: pointer;
   user-select: none;
 }
-main .users .user .picture-name img {
+main .container .users .user .picture-name img {
   height: 120px;
   border-radius: 50%;
 }
-main .users .user .picture-name span {
+main .container .users .user .picture-name span {
   font-size: 32px;
   font-weight: bold;
   color: #174dba;
 }
-main .users .user span {
+main .container .users .user span {
   align-self: center;
   color: #505050;
   font-size: 22px;
 }
-main .users #load-icon {
+main .container .users #load-icon {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -138,7 +146,7 @@ main .users #load-icon {
   -webkit-animation: load-icon-spin 2s linear infinite;
   animation: load-icon-spin 2s linear infinite;
 }
-main #items-shown {
+main .container #items-shown {
   display: block;
   text-align: end;
   font-size: 22px;
@@ -161,7 +169,7 @@ main #items-shown {
   }
 }
 @media only screen and (min-width: 850px) {
-  main .users {
+  main .container .users {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -171,7 +179,7 @@ main #items-shown {
   }
 }
 @media only screen and (min-width: 1300px) {
-  main .users {
+  main .container .users {
     grid-template-columns: repeat(3, 1fr);
   }
 }
