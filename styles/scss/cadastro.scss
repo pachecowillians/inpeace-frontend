@@ -149,6 +149,7 @@ main {
                         gap: 0.5rem;
                         line-height: 1.5rem;
                         cursor: pointer;
+                        user-select: none;
 
                         input[type="radio"] {
                             margin: 0rem;

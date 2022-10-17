@@ -161,6 +161,7 @@ main form .input-group .input-container .radio-group .radio-item {
   gap: 0.5rem;
   line-height: 1.5rem;
   cursor: pointer;
+  user-select: none;
 }
 main form .input-group .input-container .radio-group .radio-item input[type=radio] {
   margin: 0rem;
