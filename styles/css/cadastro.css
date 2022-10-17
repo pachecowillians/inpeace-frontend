@@ -223,7 +223,7 @@ main form .form-footer span a {
     align-items: center;
   }
 }
-@media only screen and (max-width: 820px) and (min-height: 900px), screen and (min-width: 820px) and (min-height: 650px), screen and (max-width: 425px) and (min-height: 762px) {
+@media only screen and (max-width: 820px) and (min-height: 900px), screen and (min-width: 820px) and (min-height: 720px), screen and (max-width: 425px) and (min-height: 860px) {
   main {
     display: flex;
   }
