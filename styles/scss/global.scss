@@ -1,9 +1,14 @@
-:root {
-    --primary: #174DBA;
-    --gray: #EFF0F3;
-    --white: #FFFFFF;
-    --dark: #505050;
-}
+$primary: #174dba;
+$gray: #eff0f3;
+$white: #ffffff;
+$dark: #505050;
+
+// :root {
+//     --primary: #174dba;
+//     --gray: #eff0f3;
+//     --white: #ffffff;
+//     --dark: #505050;
+// }
 
 html {
     box-sizing: border-box;
