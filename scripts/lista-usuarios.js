@@ -94,7 +94,7 @@ window.onload = () => {
             updateItemsShown(response.per_page, response.total);
         })
     } catch (error) {
-        alert("Problem on get data from API");
+        alert("Erro ao obter dados da API");
         console.log(error);
     }
 }
