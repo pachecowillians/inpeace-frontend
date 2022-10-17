@@ -16,10 +16,16 @@ function handleSubmit(event) {
             // Getting email and password from sessionStorage
             let validLogin = JSON.parse(sessionStorage.getItem("login"));
 
-            // If the email and password matches the data stored on sessionStorage
-            if (formDataObject.email === validLogin.email && formDataObject.password === validLogin.password) {
+            // If there is no user registered on sessionStorage
+            if (validLogin === null) {
+                alert("Não há nenhum usuário cadastrado. Favor realizar o cadastro.");
+            } else if (formDataObject.email === validLogin.email && formDataObject.password === validLogin.password) {
+                // If the email and password matches the data stored on sessionStorage
+
+                // Set the user logged in
                 sessionStorage.setItem("user", validLogin.email);
 
+                // Redirect to the user list
                 window.location.assign("./lista-usuarios.html");
             } else {
                 // Wrong email or password
@@ -31,6 +37,7 @@ function handleSubmit(event) {
             }
         }
     } catch (error) {
-        alert("Não há nenhum usuário cadastrado. Favor realizar o cadastro.");
+        alert("Erro ao realizar o login");
+        console.log(error);
     }
 }
