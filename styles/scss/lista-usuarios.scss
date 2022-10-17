@@ -38,7 +38,7 @@ main {
         align-content: center;
         justify-content: center;
         align-items: flex-start;
-        gap: 48px;
+        gap: 56px;
         width: 100%;
         flex: 1;
 
@@ -64,6 +64,7 @@ main {
             gap: 40px 40px;
             width: 100%;
             flex: 1;
+            max-height: 65%;
 
             .user {
                 background-color: #ffffff;
