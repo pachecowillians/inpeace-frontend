@@ -1,5 +1,11 @@
 # InPeace Test FrontEnd
 
+<p align="center">
+  <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/pachecowillians/svg-icons/817a7cc24c15f665e55e89d21e23752c89f4ed5f/img/html5.svg" alt="Docker" height="100px"></a>
+  <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/pachecowillians/svg-icons/817a7cc24c15f665e55e89d21e23752c89f4ed5f/img/javascript.svg" alt="Javascript" height="100px"></a>
+  <a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/pachecowillians/svg-icons/9d3e2afea776a3913d3983f7c0acef3b10b6289f/img/scss.svg" alt="SCSS" height="100px"></a>
+</p>
+
 Este projeto é parte do processo seletivo da InPeace, do qual estou participando. Ele tem por objetivo simular uma aplicação que consiste em gerenciar usuários de um sistema.
 
 Neste projeto, foram usados alguns pacotes tais como axios, sass e http-server. Por isso, logo após clonar o repositório, é necessário instalar esses pacotes no projeto utilizando o seguinte comando:
